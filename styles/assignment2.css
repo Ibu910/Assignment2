@@ -33,13 +33,13 @@
 nav{
     display: flex;
     justify-content: space-between;
-
     max-width: 1600px;
     height: 92px;
     border: 1px solid #412567;
     padding: 16px 200px;
     align-items: center;
     background-color: #1A0B2E;
+    margin-bottom: 0px;
 }
 .logo h1{
     color: white;
@@ -98,30 +98,33 @@ nav .nav-btn img{
 /* styled header section */
 header{
     max-width:1600px;
-    max-height: 760px;
+    height: 760px;
     /* background-image: url(../assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute; */
+    position: absolute;  */
     
 }
 #banner{
     background-image: url(../assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
+    width: 100%; 
     max-width:1600px;
-    height: 674px;
-
-     
+    height: 760px;
+    background-position: center;
+    display: flex;
 }
+  
 #banner .banner-section{
     max-width: 550px;
     height: 558px;
     align-items: center;
     justify-items: center;
-    margin:  101px auto; 
+    /* margin-top: 101px;
+    margin-left: 525px; */
+    margin: 101px 525px;
+
 }
 #banner .banner-section .group{
     width: 350px;
@@ -212,6 +215,60 @@ header{
     align-items: center;
     display: flex;
     column-gap: 8px;
+}
+/* about section */
+#about{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    height: 646px;
+    padding: 50px 200px 120px 200px;
+}
+#about .about-info{
+    max-width: 1200px;
+    height: 222px;
+    text-align: center;
+}
+
+#about .about-info h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+#about .about-info p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 80%;
+    line-height: 20px;
+}
+#about hr{
+    width: 100%;
+    opacity: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#about .about-card{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 94px;
+    gap: 80px;
+}
+#about .about-card .card-info{
+    max-width: 240px;
+}
+#about .about-card .card-info h1{
+   color: #00FF88;
+   font-size: 3rem;
+   margin-bottom: 16px;
+}
+#about .about-card .card-info p{
+    color: #FFFFFF;
+    opacity: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 
