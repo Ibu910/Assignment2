@@ -8,24 +8,23 @@
 .font-inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  /* background-color: #1A0B2E; */
+   /* background-color: #1A0B2E;  */
 }
 .h-text{
     color: #FFFFFF;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 16px;
 
 
 }
 .p-text{
+    margin-top: 16px;
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 400;
     opacity: 60%;
     line-height: 24px;
-    
-    margin-bottom: 105px;
 }
 
 /* Styled nabvar */
@@ -114,6 +113,9 @@ header{
     height: 760px;
     background-position: center;
     display: flex;
+     align-items: center;
+    justify-content: center;
+    /* text-align: center; */
 }
   
 #banner .banner-section{
@@ -220,11 +222,13 @@ header{
 #about{
     background-color: #1A0B2E;
     max-width: 1600px;
+    width: 100%;
     height: 646px;
     padding: 50px 200px 120px 200px;
 }
 #about .about-info{
     max-width: 1200px;
+    width: 100%;
     height: 222px;
     text-align: center;
 }
@@ -252,15 +256,18 @@ header{
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
+    width: 100%;
     height: 94px;
     gap: 80px;
 }
 #about .about-card .card-info{
     max-width: 240px;
+    width: 100%;
 }
 #about .about-card .card-info h1{
    color: #00FF88;
    font-size: 3rem;
+   font-weight: 800;
    margin-bottom: 16px;
 }
 #about .about-card .card-info p{
@@ -270,6 +277,218 @@ header{
     font-weight: 400;
     line-height: 20px;
 }
+/* Choose section */
+#choose{
+    background-color: #230E3D;
+    width: 100%;
+    max-width: 1600px;
+    height: 1121px;
+    padding: 120px 200px;
+}
+#choose h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#choose .container{
+    max-width: 1200px;
+    width: 100%;
+    height: 783px;
+}
+#choose .container .p-grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'music mobile    mobile'
+    'music mobile    mobile'
+    'music community community'
+    'music community community';
+    /* grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    */
+    height: 480px;
+}
+
+#choose .container .p-grid .music{
+    grid-area: music;
+    max-width: 380px;
+    height: 480px;
+    width: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+   
+    /* justify-content: center; */
+    padding: 40px;
+
+   
+
+}
+#choose .container .p-grid .music img{
+  width: 60px;
+  height: 60px;
+
+}
+
+#choose .container .p-grid .mobile{
+    grid-area: mobile; 
+    /* grid-row: 2/-1; */
+    /* grid-column: 3/-1; */
+    max-width: 790px;
+    height: 225px;
+    width: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+   
+    /* justify-content: center; */
+    padding: 40px;
+
+}
+#choose .container .p-grid .community{
+    /* grid-row: 2/-1; */
+    grid-area: community;
+    max-width: 790px;
+    height: 225px;
+    width: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+   
+    /* justify-content: center; */
+    padding: 40px;
+
+}
+#choose .container .s-grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'interviews resources '
+    'interviews resources ';
+}
+#choose .container .s-grid .interviews{
+    grid-area: interviews;
+    max-width: 790px;
+    width: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+   
+    /* justify-content: center; */
+    padding: 40px;
+    margin-top: 30px;
+}
+#choose .container .s-grid .resources{
+    grid-area: resources;
+    max-width: 380px;
+    width: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+   
+    /* justify-content: center; */
+    padding: 40px;
+    margin-top: 30px;
+}
+#featured{
+    max-width: 1600PX;
+    border: 1px solid red;
+    width: 100%;
+    height: 1276px;
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+    margin-bottom: 120px;
+}
+.feature h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.episode-card{
+    display: flex;
+    border: 1px solid red;
+    margin-bottom: 120px;
+}
+.card{
+    width: 100%;
+    max-width: 380px;
+    height: 440px;
+    border: 1px solid red;
+}
+.info-card{
+    padding: 24px;
+    border: 1px solid red;
+    height: 225px;
+    max-width: 380px;
+    width: 100%;
+    background-color: #250D44;
+    border-radius: 8px;
+}
+.clock{
+    display: flex;
+    gap: 7.67px;
+    margin-top: 12px;
+    align-items: center;
+}
+.clock img{
+    width: 16.67px;
+    height: 16.67px;
+}
+
+.clock p{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight:400;
+    line-height: 24px;
+}
+/* styled host */
+
+.host h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.host-card{
+    background-color:#351165;
+    border-radius: 40px;
+    display: flex;
+    height: 280px ;
+    align-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.host-card .host-pic{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+.host-info h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+   
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 184px;
+    width: 100%;
+}
+.links .link-card{
+    height: 40px;
+   max-width: 40px;
+   width: 100%;
+    border: 1px solid #533C72 ; 
+    border-radius: 50%;
+    margin-top: 16px;
+    align-items: center;
+}
+.links .link-card img{
+    margin: 10px;
+}
+
+
 
 
 @media screen and (max-width: 576px){
