@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 /* shared style */
-
 .font-inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -98,6 +97,7 @@ nav .nav-btn img{
 header{
     max-width:1600px;
     height: 760px;
+    width: 100%; 
     /* background-image: url(../assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,12 +110,12 @@ header{
     background-repeat: no-repeat;
     width: 100%; 
     max-width:1600px;
-    height: 760px;
+    min-height: 760px;
     background-position: center;
     display: flex;
      align-items: center;
     justify-content: center;
-    /* text-align: center; */
+    /* text-align: center; */ 
 }
   
 #banner .banner-section{
@@ -131,20 +131,55 @@ header{
 #banner .banner-section .group{
     width: 350px;
     height: 350px;
-    position: relative;
+    position: relative; 
+    
+    
+}
+#banner .banner-section .new{
+     position: absolute;
+    padding: 8px 12px;
+    border-radius: 1000px;
+    max-width: 75px;
+    height: 38px;
+    background-color: #00FF88;
+    /* text-align: center; */
+    right: 28PX; 
+    top: 12px;
+    /* shadow-color: #00ff8880; */
+    box-shadow: 0px 3px 27px 0px #00ff8880;
+    
+    
+}
+#banner .banner-section .new p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1A0B2E;
+    text-align: center;
 }
 
 #banner .banner-section .group .c{
-    position: absolute;
+    /* position: relative; */
     width: 350px;
     height: 350px;
+    /* z-index: -3; */
+     
+   
+}
+#banner .banner-section .group .c img{
+     width: 100%;
+    height: 350px;
+    max-width: 350PX;
 }
 #banner .banner-section .group .m{
-    position: absolute;
+    position: absolute; 
+    /* position: relative; */
     width: 200px;
     height: 200px;
-    margin-top: 69px;
-    margin-left: 75px; 
+    /* margin-top: 69px;
+    margin-left: 75px;  */
+    top: 69px;
+    left: 116.67px;
+    
 
    
 }
@@ -152,29 +187,39 @@ header{
     width: 100%;
     max-width: 116.67px;
     height: 175px;
-    margin-top: 8.33px;
+    /* margin-top: 8.33px;
     margin-left: 41.67px;
+    */
+
 }
 .banner-content{
+    max-width: 550px; 
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-items: center;
     
-    margin-top: 40PX;
+}
+.banner-content .t{
+    height: 100px;
 }
 .banner-content h1{
     color: #FFFFFF;
     font-size: 3.75rem;
     font-weight: 800;
-    line-height: 1.2;
     text-align: center;
     margin-bottom: 8px;
+    height: 73px;
 
 
 }
 .banner-content P{
     color: #FFFFFF;
-    font-size: 0.99rem; 
+    font-size: 0.80rem; 
     font-weight: 400;
     /* line-height: 1.2px; */
     height: 19px;
+    opacity: 80%;
 
     
         
@@ -185,6 +230,7 @@ header{
     margin-top: 24px;
     width: 356px;
     height: 44px;
+    align-items: center;
 }
 .banner-btn .p-btn{
     border: none; 
@@ -257,8 +303,9 @@ header{
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
-    height: 94px;
+    min-height: 94px;
     gap: 80px;
+    overflow:hidden;
 }
 #about .about-card .card-info{
     max-width: 240px;
@@ -388,12 +435,10 @@ header{
 }
 #featured{
     max-width: 1600PX;
-    border: 1px solid red;
     width: 100%;
     height: 1276px;
     padding: 120px 200px;
     background-color: #1A0B2E;
-    margin-bottom: 120px;
 }
 .feature h1{
     color: #FFFFFF;
@@ -404,18 +449,16 @@ header{
 }
 .episode-card{
     display: flex;
-    border: 1px solid red;
+
     margin-bottom: 120px;
 }
 .card{
     width: 100%;
     max-width: 380px;
     height: 440px;
-    border: 1px solid red;
 }
 .info-card{
     padding: 24px;
-    border: 1px solid red;
     height: 225px;
     max-width: 380px;
     width: 100%;
@@ -487,6 +530,61 @@ header{
 .links .link-card img{
     margin: 10px;
 }
+#footer-section{
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; 
+    max-width:1600px;
+    min-height: 412px;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    /* text-align: center;  */
+
+}
+#footer-section .footer-content{
+    max-width: 1360px;
+    width: 100%;
+    height: 172px;
+    margin: 120px;
+}
+#footer-section .footer-content h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+     text-align: center;
+     margin-bottom: 32px;
+}
+.socail-links{
+   text-align: center; 
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+.icons{display: flex;
+gap: 8px;}
+.icons p{
+     color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 60%;
+    line-height: 24px;
+}
+
+.copy p {
+     color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 60%;
+    line-height: 24px;
+    align-items: center;
+    text-align: center; 
+    margin-top: 22px;
+}
 
 
 
@@ -510,6 +608,11 @@ header{
     .menu, .menu a, .btn{
         display: none;
     }
+     header{
+        width: 100%;
+    }
     
 
+    
 }
+
